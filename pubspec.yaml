@@ -1,0 +1,8 @@
+name: highcharts
+description: A sample web application
+dependencies:
+  angular: any
+  browser: any
+  js: any
+  observe: any
+  web_components: any
