@@ -48,7 +48,7 @@ Add the component to your view (html):
 
 Create the chart options object in your controller: 
 ```
-basicLine = new HighChart ()
+basicLineChart = new HighChart ()
                   ..title = (new Title ()
                               ..text = 'Basic Line')
                   ..chart = (new Chart ()
