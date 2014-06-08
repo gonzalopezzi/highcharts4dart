@@ -12,8 +12,10 @@ Highcharts for Dart has the following features:
 How does it work?
 -----------------
 First of all, add the dependency to your **pubspec.yaml**: 
-> dependencies: 
-> highcharts4dart: any
+```
+dependencies: 
+  highcharts4dart: any
+```
 
 Then, don't forget to add the required js scripts to your main html file: 
 ```
