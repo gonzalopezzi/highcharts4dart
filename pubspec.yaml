@@ -1,7 +1,12 @@
 name: highcharts4dart
+version: 0.1.0
+author: Gonzalo Pezzi
 description: Highcharts component for Angular Dart
+homepage: https://github.com/gonzalopezzi/highcharts4dart
+environment:
+  sdk: 1.4.2
 dependencies:
-  angular: any
-  browser: any
-  js: any
-  observe: any
+  angular: 0.11.0
+  browser: '>= 0.10.0+2'
+  js: '>= 0.2.2'
+  observe: '>= 0.8.10+4'
