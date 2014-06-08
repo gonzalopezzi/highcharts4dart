@@ -13,7 +13,7 @@ How does it work?
 -----------------
 First of all, add the dependency to your **pubspec.yaml**: 
 > dependencies: 
-> : highcharts: any
+> : highcharts4dart: any
 
 Then, don't forget to add the required js scripts to your main html file: 
 ```
