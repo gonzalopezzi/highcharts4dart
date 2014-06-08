@@ -1,5 +1,3 @@
-*Disclaimer: this is just a work in progress. This component is not yet available via pub, but it will be sooner than later. This is just a piece of software to help people use Highcharts in their Dart projects, but the author is not part of the Highcharts team. If you want to use Highcharts in commercial applications, you will have to acquire a developer licence* 
-
 Highcharts for Dart
 -------------------
 Highcharts for Dart is a component for **Angular Dart** that will help you integrate Highcharts in your Dart Web Applications. 
@@ -21,11 +19,11 @@ Then, don't forget to add the required js scripts to your main html file:
 ```
 <head>
   [...]
-  <script src="packages/highcharts/standalone-framework.src.js"></script>
+  <script src="packages/highcharts4dart/standalone-framework.src.js"></script>
 </head>
 <body>
   [...]
-  <script src="packages/highcharts/highcharts.src.js"></script>
+  <script src="packages/highcharts4dart/highcharts.src.js"></script>
 </body>
 ```
 
@@ -99,4 +97,17 @@ basicLineChart = new HighChart ()
                                     ..type = 'line'
                       ];
 ```
-If you are not used to using Highcharts, this configuration can be pretty overwhelming. However, there are plenty of examples in the official Highcharts documentation and you will notice that the typed configuration will make your life easier. 
+
+Samples
+-------
+Go to the [samples page](http://23.239.14.127/highcharts4dart_samples/) for a bunch of running examples. 
+If you are not used to using Highcharts, the configuration of a new chart can be quite overwhelming. You will find those examples very useful. 
+
+
+**Do you need more?** there are plenty of examples in the [official Highcharts demo site](www.highcharts.com/demo). Though it is written in javascript, it is pretty much the same code and you will notice that the typed configuration in Dart will make your life easier. 
+
+
+Disclaimer
+----------
+*This is just a work in progress. This component is not yet available via pub, but it will be sooner than later. This is just a piece of software to help people use Highcharts in their Dart projects, but the author is not part of the Highcharts team. *
+*Keep in mind that if you want to use Highcharts in commercial applications, you will have to acquire a developer licence* 
