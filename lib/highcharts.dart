@@ -1,4 +1,4 @@
-library highcharts;
+library highcharts4dart;
 
 import 'dart:html';
 import 'dart:js';

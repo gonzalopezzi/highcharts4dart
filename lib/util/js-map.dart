@@ -1,4 +1,4 @@
-part of highcharts;
+part of highcharts4dart;
 
 
 Map addMapValue (Map map, String key, dynamic value) {

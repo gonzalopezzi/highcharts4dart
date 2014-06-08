@@ -81,7 +81,3 @@ packages:
     description: utf
     source: hosted
     version: "0.9.0"
-  web_components:
-    description: web_components
-    source: hosted
-    version: "0.3.4"

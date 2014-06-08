@@ -1,4 +1,4 @@
-part of highcharts;
+part of highcharts4dart;
 
 abstract class ToMap {
   Map toMap ();

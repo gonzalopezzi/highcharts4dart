@@ -1,8 +1,7 @@
-name: highcharts
-description: A sample web application
+name: highcharts4dart
+description: Highcharts component for Angular Dart
 dependencies:
   angular: any
   browser: any
   js: any
   observe: any
-  web_components: any

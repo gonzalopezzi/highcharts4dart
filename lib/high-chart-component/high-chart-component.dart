@@ -1,9 +1,9 @@
-part of highcharts;
+part of highcharts4dart;
 
 @Component (
     selector: 'high-chart',
     useShadowDom: false,
-    templateUrl: 'packages/highcharts/high-chart-component/high-chart-component.html',
+    templateUrl: 'packages/highcharts4dart/high-chart-component/high-chart-component.html',
     publishAs: 'cmp'
 )
 class HighChartComponent {
@@ -42,7 +42,7 @@ class HighChartComponent {
   void _checkContainer (_) {
     /*_chartContainer = querySelector("#chart-container");*/
     if (this._element.children.length > 0) {
-      print ("Dom Ready");
+      //print ("Dom Ready");
       _domReady = true;
       _element.children.clear();
       _element.append(new DivElement()
@@ -71,7 +71,7 @@ class HighChartComponent {
   
   void _updateDisplay () {
     if (_domReady && _displayDirty && _chartOptions != null) {
-      print ("Update display");
+      //print ("Update display");
       _createChart ();
     }
     _displayDirty = false;
