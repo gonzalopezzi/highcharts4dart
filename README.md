@@ -102,7 +102,7 @@ basicLineChart = new HighChart ()
 
 Samples
 -------
-Go to the [samples page](http://23.239.14.127/highcharts4dart_samples/) for a bunch of running examples. 
+Go to the [samples page](http://highcharts-samples.gonzalopezzi.com/) for a bunch of running examples. 
 If you are not used to using Highcharts, the configuration of a new chart can be quite overwhelming. You will find those examples very useful. 
 
 
