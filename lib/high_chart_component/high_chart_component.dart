@@ -3,7 +3,7 @@ part of highcharts4dart;
 @Component (
     selector: 'high-chart',
     useShadowDom: false,
-    templateUrl: 'packages/highcharts4dart/high-chart-component/high-chart-component.html',
+    templateUrl: 'packages/highcharts4dart/high_chart_component/high_chart_component.html',
     publishAs: 'cmp'
 )
 class HighChartComponent {
