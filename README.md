@@ -108,6 +108,25 @@ If you are not used to using Highcharts, the configuration of a new chart can be
 
 **Do you need more?** there are plenty of examples in the [official Highcharts demo site](www.highcharts.com/demo). Though it is written in javascript, it is pretty much the same code and you will notice that the typed configuration in Dart will make your life easier. 
 
+FAQ
+---
+- **How can I set the width or height of the chart?**
+You just have to set the style for the chart as you usually do with any other div element: 
+```
+    <high-chart chart-options="ctrl.currentChart" class="sample-chart-container"></high-chart>
+```
+And add the required style in your css file: 
+```
+    /*Example: */
+    .sample-chart-container {
+        display:block;
+        width:100%;
+        height:500px;
+        margin: 0px;
+        padding:10px;
+    }
+```
+This is available since 0.1.0+3
 
 Disclaimer
 ----------
