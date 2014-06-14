@@ -2760,23 +2760,23 @@ class Point extends OptionsObject  implements ToMap {
   }
   @reflectable bool get sliced => _sliced;
   
-  int _x;
+  num _x;
   /**
    * The x value of the point.
    */
-  @reflectable set x (int a_x) {
+  @reflectable set x (num a_x) {
     _x = configureNotifiers(#x, _x, a_x);
   }
-  @reflectable int get x => _x;
+  @reflectable num get x => _x;
   
-  int _y;
+  num _y;
   /**
    * The y value of the point
    */
-  @reflectable set y (int a_y) {
+  @reflectable set y (num a_y) {
     _y = configureNotifiers(#y, _y, a_y);
   }
-  @reflectable int get y => _y;
+  @reflectable num get y => _y;
   
   Map toMap () {
     Map map = new Map ();
