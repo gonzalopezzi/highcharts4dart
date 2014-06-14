@@ -29,7 +29,6 @@ class HighChartComponent {
   }
   get chartOptions => _chartOptions;
   
-  
   bool _domReady = false;
   bool _displayDirty = false;
   
@@ -40,16 +39,14 @@ class HighChartComponent {
   }
   
   void _checkContainer (_) {
-    /*_chartContainer = querySelector("#chart-container");*/
     if (this._element.children.length > 0) {
-      //print ("Dom Ready");
       _domReady = true;
       _element.children.clear();
-      _element.append(new DivElement()
-                               ..id="chart-container-$_chartID"
-                               ..style.display="inline-block"
-                               ..style.position="relative"
-                               ..style.margin="20px");
+      DivElement chartContainer = new DivElement();
+      chartContainer.id="chart-container-$_chartID";
+      chartContainer.classes.addAll(_element.classes);
+                               
+      _element.append(chartContainer);
       _invalidateDisplay();
     }
     else {
