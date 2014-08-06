@@ -2769,6 +2769,15 @@ class Point extends OptionsObject  implements ToMap {
   }
   @reflectable num get x => _x;
   
+  DateTime _xDate;
+  /**
+   * The x value of the point. Use this property for date x values
+   */
+  @reflectable set xDate (DateTime a_xDate) {
+    _xDate = configureNotifiers(#xDate, _xDate, a_xDate);
+  }
+  @reflectable DateTime get xDate => _xDate;
+  
   num _y;
   /**
    * The y value of the point
@@ -2777,6 +2786,17 @@ class Point extends OptionsObject  implements ToMap {
     _y = configureNotifiers(#y, _y, a_y);
   }
   @reflectable num get y => _y;
+  
+  Object _xValueToJS () {
+    Object out = null;
+    if (this.x != null) {
+      out = this.x;
+    }
+    else if (this.xDate != null) {
+      out = this.xDate;
+    }
+    return out;
+  }
   
   Map toMap () {
     Map map = new Map ();
@@ -2789,13 +2809,15 @@ class Point extends OptionsObject  implements ToMap {
     addMapValue(map, 'marker', this.marker);
     addMapValue(map, 'name', this.name);
     addMapValue(map, 'sliced', this.sliced);
-    addMapValue(map, 'x', this.x);
+    addMapValue(map, 'x', _xValueToJS());
     addMapValue(map, 'y', this.y);
     if (moreOptions != null) {
       map.addAll(moreOptions);
     }
     return map;
   }
+  
+  
   
 }
 
