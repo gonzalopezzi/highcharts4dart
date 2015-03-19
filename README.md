@@ -1,3 +1,7 @@
+Deprecated
+----------
+This components have been deprecated. If you want to use Highcharts in your Dart projects, I strongly recommend you to check out [polymer-highcharts](https://github.com/gonzalopezzi/polymer_highcharts) instead. 
+
 Highcharts for Dart
 -------------------
 Highcharts for Dart is a component for **Angular Dart** that will help you integrate Highcharts in your Dart Web Applications. 
